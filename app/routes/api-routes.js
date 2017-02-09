@@ -5,7 +5,7 @@ var Burger = require("../models/burger.js");
 // =============================================================
 module.exports = function(app) {
 
-  // Get all books
+
   app.get("/api/all", function(req, res) {
 
     Burger.findAll({}).then(function(results) {
@@ -28,8 +28,8 @@ module.exports = function(app) {
 
   });
 
-  // Delete a book
-  app.post("burgers/update", function(req, res) {
+
+  app.post("/burgers/update", function(req, res) {
 
     console.log("Burger Data:");
     console.log(req.body);
