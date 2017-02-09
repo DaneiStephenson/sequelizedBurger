@@ -32,12 +32,18 @@ module.exports = function(app) {
   app.post("/burgers/update", function(req, res) {
 
     console.log("Burger Data:");
-    console.log(req.body);
-    Burger.destroy({
+    console.log(req.body.id);
+    Burger.update({
       where: {
-        id: req.body.id
-      }
-    });
+      
+
+          id: req.body.id,
+         burger_name: req.body.burger_name,
+      devoured: req.body.devoured,
+
+      
+  
+    }});
 
   });
 

@@ -13,7 +13,9 @@ var Burger = sequelize.define("burgers", {
         type: Sequelize.STRING
     },
     devoured: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        $not: false
+        
     },
     
 }, {
