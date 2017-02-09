@@ -27,6 +27,7 @@ module.exports = function(app) {
       
     }).then(function(){
       res.redirect('/');
+    });
 
   });
 
@@ -52,5 +53,5 @@ module.exports = function(app) {
 
   });
 
-});
+
 };
