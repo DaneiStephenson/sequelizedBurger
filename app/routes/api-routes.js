@@ -34,7 +34,7 @@ module.exports = function(app) {
   app.post("/burgers/update", function(req, res) {
 
     console.log("Burger Data:");
-    console.log(req.body.id);
+    console.log(req.body.burger_id);
     Burger.update({
       devoured: 1,
    },
