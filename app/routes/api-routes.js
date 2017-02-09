@@ -36,17 +36,15 @@ module.exports = function(app) {
     console.log("Burger Data:");
     console.log(req.body.id);
     Burger.update({
-      devoured: null,
+      devoured: 1,
    },
       {
       where: {
-      $ne: null,
-
-          id: req.body.id,
-         burger_name: req.body.burger_name,
-      devoured: req.body.devoured,
-
       
+
+       
+        id: req.body.burger_id
+
   
     }}).then(function(){
       res.redirect('/');
