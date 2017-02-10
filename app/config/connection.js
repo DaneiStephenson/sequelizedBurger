@@ -3,9 +3,9 @@ var Sequelize = require("sequelize");
 
 
 
-var sequelize = new Sequelize("sequelize_burger",  "js6aj9sr2imcdrh9", "g6mgjqn8z5fqsl8o",{
+var sequelize = new Sequelize("iwt9z4ag1ipcrvxj",  "js6aj9sr2imcdrh9", "g6mgjqn8z5fqsl8o",{
 	
-  	host: "lalv4v3hlsipxnujn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  	host: "alv4v3hlsipxnujn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   	
   	dialect: "mysql",
   	pool: {
